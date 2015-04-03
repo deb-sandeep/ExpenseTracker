@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/sandeep/softwares/Android/Sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="/home/sandeep/projects/source/AndroidstudioProjects/ExpenseTracker/expenseTracker/build/intermediates/pre-dexed/debug/support-v4-18.0.0-c2d41702a286ce2bee3bbe93d3f2d925bb478b43.jar" />
+    </item>
+    <item
+        jar="/home/sandeep/projects/source/AndroidstudioProjects/ExpenseTracker/expenseTracker/build/intermediates/exploded-aar/ExpenseTracker/library/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="90997d841c0f3bba9eb0ce9e4655d415c74a58a9">
+        <dex dex="/home/sandeep/projects/source/AndroidstudioProjects/ExpenseTracker/expenseTracker/build/intermediates/pre-dexed/debug/classes-e79a1d01cc866359208d38a322241a6deb7aa483.jar" />
+    </item>
+
+</items>

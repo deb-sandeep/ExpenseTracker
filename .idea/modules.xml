@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ExpenseTracker.iml" filepath="$PROJECT_DIR$/ExpenseTracker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/expenseTracker/expenseTracker.iml" filepath="$PROJECT_DIR$/expenseTracker/expenseTracker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+    </modules>
+  </component>
+</project>
+

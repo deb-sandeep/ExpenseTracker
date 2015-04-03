@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <string-array name="create_tables">
+        <item><![CDATA[
+        	CREATE TABLE category ( 
+			    _id         INTEGER PRIMARY KEY AUTOINCREMENT,
+			    name        TEXT    NOT NULL UNIQUE,
+			    sequence_no INTEGER NOT NULL 
+			)
+        ]]>
+        </item>
+        <item><![CDATA[
+			CREATE TABLE sub_category ( 
+			    _id         INTEGER PRIMARY KEY AUTOINCREMENT,
+			    cat_id      INTEGER REFERENCES category ( _id ),
+			    name        TEXT    NOT NULL,
+			    sequence_no INTEGER NOT NULL 
+			)        
+        ]]>
+        </item>
+        <item><![CDATA[
+			CREATE TABLE expense_item ( 
+			    _id          INTEGER PRIMARY KEY AUTOINCREMENT,
+			    date         INTEGER NOT NULL,
+			    cat_id       INTEGER REFERENCES category ( _id ),
+			    subcat_id    INTEGER REFERENCES sub_category ( _id ),
+			    paid_by      TEXT    NOT NULL,
+			    amount       INTEGER NOT NULL,
+			    description  TEXT 
+			)
+        ]]>
+        </item>
+    </string-array>
+    
+    <string-array name="drop_tables">
+        <item><![CDATA[
+        	drop table if exists expense_item
+        ]]>
+        </item>
+        <item><![CDATA[
+            drop table if exists sub_category
+        ]]>
+        </item>
+        <item><![CDATA[
+            drop table if exists category
+        ]]>
+        </item>
+    </string-array>
+
+    <string name="query_select_all_expense_items">
+        <![CDATA[
+            select
+                _id          ,
+                date         ,
+                cat_id       ,
+                subcat_id    ,
+                paid_by      ,
+                amount       ,
+                description
+            from
+                expense_item
+            order by date desc, _id desc
+        ]]>
+    </string>
+
+    <string name="query_select_all_categories">
+        <![CDATA[
+            select
+                _id,
+                name         
+            from
+                category
+            order by sequence_no asc
+        ]]>
+    </string>
+    
+    <string name="query_select_all_sub_categories">
+        <![CDATA[
+            select
+                _id,
+                name         
+            from
+                sub_category
+            where
+                cat_id = ?
+            order by sequence_no asc
+        ]]>
+    </string>
+
+    <string name="query_add_category">
+        <![CDATA[
+            insert into category ( sequence_no, name ) 
+            values ( (select max(sequence_no)+1 from category), ? )
+        ]]>
+    </string>
+
+    <!-- =================================================================== -->
+    <!-- Param 1 - integer, The category id under which the sub category     -->
+    <!--           has to be added.                                          -->
+    <!--                                                                     -->
+    <!-- Param 2 - string, The sub category name                             -->
+    <!--                                                                     -->
+    <!-- Param 3 - integer, The category id under which the sub category     -->
+    <!--           has to be added.                                          -->
+    <!--                                                                     -->
+    <!-- Param 4 - integer, The category id under which the sub category     -->
+    <!--           has to be added.                                          -->
+    <!-- =================================================================== -->
+    <string name="query_add_sub_category">
+        <![CDATA[
+			insert into sub_category ( cat_id, name, sequence_no ) 
+			values 
+			( 
+			        ?,
+			        ?,
+			        (
+			            select 
+			                case when ( select 1 
+			                            from 
+			                            sub_category
+			                            where
+			                            cat_id = ? ) IS NOT NULL 
+			                THEN
+			                   ( select max(sequence_no)+1 
+			                     from 
+			                     sub_category
+			                     where
+			                     cat_id = ?
+			                   )
+			                ELSE 
+			                    0
+			                END
+			        ) 
+			)
+        ]]>
+    </string>
+
+    <!-- =================================================================== -->
+    <!-- Param 1 - integer, The category id which needs to be checked for    -->
+    <!--           association with expense items                            -->
+    <!-- =================================================================== -->
+    <string name="query_is_cat_used">
+        <![CDATA[
+            select count(*) from expense_item where cat_id = ?
+        ]]>
+    </string>
+    
+    <!-- =================================================================== -->
+    <!-- Param 1 - integer, The sub-category id which needs to be checked for-->
+    <!--           association with expense items                            -->
+    <!-- =================================================================== -->
+    <string name="query_is_subcat_used">
+        <![CDATA[
+            select count(*) from expense_item where subcat_id = ?
+        ]]>
+    </string>
+    
+    <!-- =================================================================== -->
+    <!-- Param 1 - integer, The category id                                  -->
+    <!-- =================================================================== -->
+    <string name="query_delete_all_subcats_for_cat">
+        <![CDATA[
+            delete from sub_category where cat_id = ?
+        ]]>
+    </string>
+
+    <!-- =================================================================== -->
+    <!-- Deletes the category                                                -->
+    <!-- Param 1 - integer, The category id                                  -->
+    <!-- =================================================================== -->
+    <string name="query_delete_cat">
+        <![CDATA[
+            delete from category where _id = ?
+        ]]>
+    </string>
+
+    <!-- =================================================================== -->
+    <!-- Deletes the sub category                                            -->
+    <!-- Param 1 - integer, The sub category id                              -->
+    <!-- =================================================================== -->
+    <string name="query_delete_subcat">
+        <![CDATA[
+            delete from sub_category where _id = ?
+        ]]>
+    </string>
+
+    <!-- =================================================================== -->
+    <!-- Returns a result set containing the id, name and sequence number    -->
+    <!-- of categories between the two provided category ids.                -->
+    <!--                                                                     -->
+    <!-- Param 1 - integer, The category id with smaller sequence number     -->
+    <!--                                                                     -->
+    <!-- Param 2 - integer, The category id with greater sequence number     -->
+    <!-- =================================================================== -->
+    <string name="query_get_cat_seq_change_tupules">
+        <![CDATA[
+            select _id, sequence_no
+			from category
+			where sequence_no between 
+			     ( select sequence_no from category where _id = #param1# )
+			     and
+			     ( select sequence_no from category where _id = #param2# )
+			order by sequence_no asc
+        ]]>
+    </string>
+
+    <string name="query_get_subcat_seq_change_tupules">
+        <![CDATA[
+            select _id, sequence_no
+            from sub_category
+            where sequence_no between 
+                 ( select sequence_no from sub_category where _id = #param1# )
+                 and
+                 ( select sequence_no from sub_category where _id = #param2# )
+            order by sequence_no asc
+        ]]>
+    </string>
+
+    <!-- =================================================================== -->
+    <!-- Updates the sequence number of the specified category id            -->
+    <!--                                                                     -->
+    <!-- Param 1 - integer, The sequence number                              -->
+    <!--                                                                     -->
+    <!-- Param 2 - integer, The category id                                  -->
+    <!-- =================================================================== -->
+    <string name="query_update_cat_sequence_no">
+        <![CDATA[
+            update category
+            set sequence_no = ?
+            where _id = ?
+        ]]>
+    </string>
+
+    <string name="query_update_subcat_sequence_no">
+        <![CDATA[
+            update sub_category
+            set sequence_no = ?
+            where _id = ?
+        ]]>
+    </string>
+
+    <!-- =================================================================== -->
+    <!-- Updates the name of the specified category id                       -->
+    <!--                                                                     -->
+    <!-- Param 1 - string, The new name of the category                      -->
+    <!--                                                                     -->
+    <!-- Param 2 - integer, The category id                                  -->
+    <!-- =================================================================== -->
+    <string name="query_update_cat_name">
+        <![CDATA[
+            update category
+            set name = ?
+            where _id = ?
+        ]]>
+    </string>
+
+    <string name="query_update_subcat_name">
+        <![CDATA[
+            update sub_category
+            set name = ?
+            where _id = ?
+        ]]>
+    </string>
+</resources>

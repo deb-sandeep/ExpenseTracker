@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.sandy.android.expensetracker"
+	android:versionCode="1"
+	android:versionName="1.0" >
+
+	<uses-sdk
+		android:minSdkVersion="17"
+		android:targetSdkVersion="17" />
+
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+	<application
+		android:allowBackup="true"
+		android:description="@string/title_main_activity"
+		android:icon="@drawable/coin_icon"
+		android:label="@string/title_main_activity"
+		android:theme="@style/AppTheme" >
+		<activity
+			android:name="com.sandy.android.expensetracker.MainActivity"
+			android:label="@string/title_main_activity"
+			android:screenOrientation="portrait" >
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name="com.sandy.android.expensetracker.ExpenseEntryActivity"
+			android:label="@string/title_activity_expense_entry"
+			android:parentActivityName="com.sandy.android.expensetracker.MainActivity"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="stateAlwaysVisible" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="com.sandy.android.expensetracker.MainActivity" />
+		</activity>
+		<activity
+			android:name="com.sandy.android.expensetracker.ReportActivity"
+			android:label="@string/title_activity_report"
+			android:parentActivityName="com.sandy.android.expensetracker.MainActivity"
+			android:screenOrientation="portrait" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="com.sandy.android.expensetracker.MainActivity" />
+		</activity>
+		<activity
+			android:name="com.sandy.android.expensetracker.SettingsActivity"
+			android:label="@string/title_activity_settings"
+			android:parentActivityName="com.sandy.android.expensetracker.MainActivity" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="com.sandy.android.expensetracker.MainActivity" />
+		</activity>
+		<activity
+			android:name="com.sandy.android.expensetracker.ManageExpenseCategoryActivity"
+			android:label="@string/title_activity_manage_expense_category"
+			android:parentActivityName="com.sandy.android.expensetracker.SettingsActivity" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="com.sandy.android.expensetracker.SettingsActivity" />
+		</activity>
+		<activity
+			android:name="com.sandy.android.expensetracker.ManageExpenseSubCategoryActivity"
+			android:label="@string/title_activity_manage_expense_subcategory"
+			android:parentActivityName="com.sandy.android.expensetracker.SettingsActivity" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="com.sandy.android.expensetracker.SettingsActivity" />
+		</activity>
+	</application>
+
+</manifest>

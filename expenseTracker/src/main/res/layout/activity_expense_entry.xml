@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <Button
+        android:id="@+id/dateSelectionBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="25sp"
+    />
+
+	<TextView
+		android:id="@+id/catSpinnerLabel"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+        android:background="#666666"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:paddingLeft="5sp"
+		android:layout_alignLeft="@id/dateSelectionBtn"
+		android:layout_below="@id/dateSelectionBtn"
+		android:text="@string/label_exp_cat_spinner"
+		android:textAppearance="?android:attr/textAppearanceSmall" 
+    />
+
+	<Spinner
+		android:id="@+id/categorySpinner"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+        android:layout_alignLeft="@id/dateSelectionBtn"
+		android:layout_below="@id/catSpinnerLabel" />
+
+    <TextView
+        android:id="@+id/subCatSpinnerLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#666666"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:paddingLeft="5sp"
+        android:layout_alignLeft="@id/dateSelectionBtn"
+        android:layout_below="@id/categorySpinner"
+        android:text="@string/label_exp_subcat_spinner"
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+    />
+
+    <Spinner
+        android:id="@+id/subCategorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/dateSelectionBtn"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/subCatSpinnerLabel" />
+
+    <TextView
+        android:id="@+id/paidByLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#666666"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:paddingLeft="5sp"
+        android:layout_alignLeft="@id/dateSelectionBtn"
+        android:layout_below="@id/subCategorySpinner"
+        android:text="@string/label_exp_paidby_spinner"
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+    />
+
+    <Spinner
+        android:id="@+id/paidBySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignLeft="@id/dateSelectionBtn"
+        android:layout_below="@id/paidByLabel" 
+        android:entries="@array/paid_by_options"/>
+
+    <TextView
+        android:id="@+id/amtLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#666666"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:paddingLeft="5sp"
+        android:layout_alignLeft="@id/dateSelectionBtn"
+        android:layout_below="@id/paidBySpinner"
+        android:text="@string/label_exp_amt_text"
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+    />
+
+    <EditText
+        android:id="@+id/amtEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignLeft="@id/dateSelectionBtn"
+        android:layout_below="@id/amtLabel"
+        android:inputType="numberSigned" >
+        
+    	<requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/descLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#666666"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:paddingLeft="5sp"
+        android:layout_alignLeft="@id/dateSelectionBtn"
+        android:layout_below="@id/amtEditText"
+        android:text="@string/label_exp_descr_text"
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+    />
+
+    <EditText
+        android:id="@+id/descEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignLeft="@id/dateSelectionBtn"
+        android:layout_below="@id/descLabel"
+        android:inputType="textAutoComplete|textCapSentences"/>
+    
+    <TableLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_horizontal|center_vertical"
+    	android:layout_alignParentBottom="true">
+    
+    	<TableRow 
+    		android:id="@+id/okCancelBtnRow"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content" >
+    		    <Button
+			        android:id="@+id/cancelBtn"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="1"
+                    android:textSize="25sp"
+                    android:text="@string/label_cancel_btn"
+			    />
+                <Button
+                    android:id="@+id/okBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="25sp"
+                    android:text="@string/label_ok_btn"
+                />
+    	</TableRow>
+    </TableLayout>
+
+</RelativeLayout>
+

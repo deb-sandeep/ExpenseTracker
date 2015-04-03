@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_gravity="center_vertical"
+	android:clickable="false"
+	android:minHeight="40dp" >
+
+    <TextView
+    	android:id="@+id/expListItemDateTV"
+    	android:layout_width="70sp"
+    	android:layout_height="60sp"
+    	android:layout_alignParentBottom="true"
+    	android:layout_alignParentLeft="true"
+    	android:layout_alignParentTop="true"
+    	android:background="#666666"
+    	android:gravity="center"
+    	android:fontFamily="sans-serif" 
+    	android:textSize="20sp"
+    	android:textColor="#FFFFFF"
+    	/>
+
+    <TextView
+    	android:id="@+id/expListItemCategoryTV"
+    	android:layout_width="fill_parent"
+    	android:layout_height="25sp"
+    	android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+    	android:layout_toRightOf="@id/expListItemDateTV"
+    	android:background="#BCBCBC"
+    	android:gravity="left|center_vertical"
+        android:paddingStart="5sp"
+        android:fontFamily="sans-serif" 
+        android:textSize="17sp"
+        android:textColor="#000000"
+    	/>
+
+    <TextView
+        android:id="@+id/expListItemAmtTV"
+        android:layout_height="35sp"
+        android:layout_width="90sp"
+        android:layout_below="@id/expListItemCategoryTV"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#F4F4F4"
+        android:gravity="right|center_vertical"
+        android:paddingRight="5sp"
+        android:fontFamily="sans-serif" 
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:textColor="#0000FF"
+        />
+
+    <TextView
+    	android:id="@+id/expListItemSubCategoryTV"
+    	android:layout_width="fill_parent"
+    	android:layout_height="20sp"
+    	android:layout_below="@id/expListItemCategoryTV"
+    	android:layout_toLeftOf="@id/expListItemAmtTV"
+    	android:layout_toRightOf="@id/expListItemDateTV"
+        android:background="#EDEDED"
+        android:gravity="left|center_vertical"
+        android:paddingStart="5sp"
+        android:fontFamily="sans-serif" 
+        android:textSize="15sp"
+        android:textColor="#333333"
+        />
+
+    <TextView
+        android:id="@+id/expListItemDescTV"
+        android:layout_width="fill_parent"
+        android:layout_height="15sp"
+        android:layout_below="@id/expListItemSubCategoryTV"
+        android:layout_toLeftOf="@id/expListItemAmtTV"
+        android:layout_toRightOf="@id/expListItemDateTV"
+        android:background="#EDEDED"
+        android:gravity="left|top"
+        android:paddingStart="5sp"
+        android:fontFamily="sans-serif" 
+        android:textStyle="italic" 
+        android:textSize="14sp"
+        android:textColor="#505050"
+        />
+
+</RelativeLayout>

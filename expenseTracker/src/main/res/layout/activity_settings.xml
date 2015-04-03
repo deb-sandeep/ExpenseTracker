@@ -1,0 +1,160 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+	
+	<!-- =================================================================== -->
+	<!-- Export database                                                     -->
+	<!-- =================================================================== -->
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+	
+	    <ImageButton
+	        android:id="@+id/exportDBBtn"
+	        android:src="@drawable/ic_go_btn_normal" 
+	        android:background="@android:color/transparent"
+	        android:layout_width="60sp"
+	        android:layout_height="80sp"
+	        android:layout_alignParentRight="true" />
+
+		<TextView
+	        android:id="@+id/exportDBBTitle"
+	        android:text="Export Database"
+	        android:textSize="20sp"
+	        android:textStyle="bold"
+	        android:textColor="@android:color/white"
+            android:background="#666666"
+	        android:gravity="left|center_vertical"
+	        android:layout_width="fill_parent"
+	        android:layout_height="30sp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignTop="@id/exportDBBtn"
+	        android:layout_toLeftOf="@id/exportDBBtn"
+	    />
+
+        <TextView
+            android:text="Exports the SQLite DB to the public folder for analysis. For advanced use only."
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:background="#EDEDED"
+            android:gravity="left|center_vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="50sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignBottom="@id/exportDBBtn"
+            android:layout_toLeftOf="@id/exportDBBtn"
+            android:layout_below="@id/exportDBBTitle"
+        />
+	</RelativeLayout>
+	
+	<View   android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black" />
+
+    <!-- =================================================================== -->
+    <!-- Manage expense categories                                           -->
+    <!-- =================================================================== -->
+	<RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    
+        <ImageButton
+            android:id="@+id/manageExpenseCategoriesBtn"
+            android:src="@drawable/ic_go_btn_normal" 
+            android:background="@android:color/transparent"
+            android:layout_width="60sp"
+            android:layout_height="80sp"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/manageExpenseCategoriesTitle"
+            android:text="Manage Expense Categories"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="#666666"
+            android:gravity="left|center_vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="30sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@id/manageExpenseCategoriesBtn"
+            android:layout_toLeftOf="@id/manageExpenseCategoriesBtn"
+        />
+
+        <TextView
+            android:text="Manage expense categories by renamimg, deleting, adding and re-ordering expense categories"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:background="#EDEDED"
+            android:gravity="left|center_vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="50sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignBottom="@id/manageExpenseCategoriesBtn"
+            android:layout_toLeftOf="@id/manageExpenseCategoriesBtn"
+            android:layout_below="@id/manageExpenseCategoriesTitle"
+        />
+    </RelativeLayout>
+    
+    <View   android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black" />
+
+    <!-- =================================================================== -->
+    <!-- Manage expense sub categories                                       -->
+    <!-- =================================================================== -->
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    
+        <ImageButton
+            android:id="@+id/manageExpenseSubCategoriesBtn"
+            android:src="@drawable/ic_go_btn_normal" 
+            android:background="@android:color/transparent"
+            android:layout_width="60sp"
+            android:layout_height="80sp"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/manageExpenseSubCategoriesTitle"
+            android:text="Manage Expense Sub-Categories"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="#666666"
+            android:gravity="left|center_vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="30sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@id/manageExpenseSubCategoriesBtn"
+            android:layout_toLeftOf="@id/manageExpenseSubCategoriesBtn"
+        />
+
+        <TextView
+            android:text="Manage expense sub categories by renamimg, deleting, adding and re-ordering expense sub categories."
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:background="#EDEDED"
+            android:gravity="left|center_vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="50sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignBottom="@id/manageExpenseSubCategoriesBtn"
+            android:layout_toLeftOf="@id/manageExpenseSubCategoriesBtn"
+            android:layout_below="@id/manageExpenseSubCategoriesTitle"
+        />
+    </RelativeLayout>
+    
+    <View   android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black" />
+
+</LinearLayout>
+</ScrollView>
+

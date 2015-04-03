@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="ContentDescription">
+        <ignore path="res/layout/activity_settings.xml" />
+    </issue>
+    <issue id="HardcodedText">
+        <ignore path="res/layout/activity_manage_expense_category.xml" />
+        <ignore path="res/layout/activity_settings.xml" />
+        <ignore path="res/layout/dslv_item_layout.xml" />
+    </issue>
+    <issue id="LabelFor" severity="ignore" />
+</lint>

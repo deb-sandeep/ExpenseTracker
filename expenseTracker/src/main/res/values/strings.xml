@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="title_activity_report">Expense Report</string>
+
+	<!-- =================================================================== -->
+	<!-- Menu item labels for action bars, context menus etc                 -->
+	<!-- =================================================================== -->
+	<string name="label_mi_delete_all">Delete All</string>
+	<string name="label_mi_settings">Settings</string>
+	<string name="label_mi_db_export">DB Export</string>
+	<string name="label_mi_overflow">Overflow</string>
+	<string name="label_mi_export">Export</string>
+	<string name="label_mi_report">Report</string>
+	<string name="label_ctx_mi_delete">Delete</string>
+	<string name="label_ctx_mi_addamt">Add Amount</string>
+	<string name="label_ctx_mi_clone">Clone</string>
+	<string name="label_ctx_mi_clone_ex">Clone (*)</string>
+	<string name="label_add_btn">+</string>
+
+    <!-- =================================================================== -->
+    <!-- Dialog messages                                                     -->
+    <!-- =================================================================== -->
+    <string name="msg_cant_remove_cat">
+    	<![CDATA[ Can not remove this category. There are expense items 
+                  associated with this category or this is the only sub 
+                  category. ]]>
+    </string>
+	
+    <string name="msg_cant_remove_subcat">
+        <![CDATA[ Can not remove this sub category. There are expense items 
+                  associated with this sub category. ]]>
+    </string>
+    
+    <string name="msg_null_string">
+        <![CDATA[ Can\'t modify name. Modified text can\'t be empty ]]>
+    </string>
+    
+    <string name="msg_same_string">
+        <![CDATA[ Can\'t modify name. Modified text equals original text ]]>
+    </string>
+    
+    <!-- =================================================================== -->
+	<!-- Keys for identifying data items in bundles, maps etc -->
+	<!-- =================================================================== -->
+	<string name="expense_item_tag">Expense Item</string>
+
+	<!-- =================================================================== -->
+	<!-- Label texts for activity titles -->
+	<!-- =================================================================== -->
+	<string name="title_main_activity">Expense Tracker</string>
+	<string name="title_activity_expense_entry">Edit Expense</string>
+
+	<!-- =================================================================== -->
+	<!-- Label texts for views in activities -->
+	<!-- =================================================================== -->
+	<string name="label_exp_cat_spinner">Expense category</string>
+	<string name="label_exp_choose_category">Choose Expense category</string>
+	<string name="label_exp_subcat_spinner">Expense sub category</string>
+	<string name="label_exp_paidby_spinner">Paid by</string>
+	<string name="label_exp_amt_text">Amount</string>
+	<string name="label_exp_descr_text">Notes</string>
+	<string name="label_add_expense_btn">Add Expense</string>
+	<string name="label_ok_btn">OK</string>
+	<string name="label_cancel_btn">Cancel</string>
+	<string name="label_report_total">Total expenses</string>
+
+	<!-- =================================================================== -->
+	<!-- Expense Entry Cat, SubCat, .. reference data -->
+	<!-- These are presorted based on the heuristic maximal usage patterns -->
+	<!-- =================================================================== -->
+
+	<string name="cat_clothes">Clothes</string>
+	<string name="cat_contingency_expense">Contingency expenses</string>
+	<string name="cat_donation">Donation/Gift</string>
+	<string name="cat_fancy_entertainment">Fancy and Entertainment</string>
+	<string name="cat_financial_milestone">Financial milestone</string>
+	<string name="cat_food">Food</string>
+	<string name="cat_fuel_parking">Fuel/Parking</string>
+	<string name="cat_grocery_household">Grocery and household</string>
+	<string name="cat_house_maintenance">House maintenance</string>
+	<string name="cat_income">Income</string>
+	<string name="cat_investment">Investment</string>
+	<string name="cat_medicines">Medicines</string>
+	<string name="cat_monthly_bill">Monthly bill</string>
+	<string name="cat_school">School</string>
+	<string name="cat_vehicle_maintenance">Vehicle maintenance</string>
+
+	<string-array name="paid_by_options">
+		<item>Cash</item>
+		<item>Credit Card</item>
+		<item>Online Transfer</item>
+		<item>Cheque</item>
+	</string-array>
+	<string-array name="expense_categories">
+		<item>@string/cat_fancy_entertainment</item>
+		<item>@string/cat_food</item>
+		<item>@string/cat_monthly_bill</item>
+		<item>@string/cat_grocery_household</item>
+		<item>@string/cat_medicines</item>
+		<item>@string/cat_fuel_parking</item>
+		<item>@string/cat_income</item>
+		<item>@string/cat_investment</item>
+		<item>@string/cat_vehicle_maintenance</item>
+		<item>@string/cat_house_maintenance</item>
+		<item>@string/cat_school</item>
+		<item>@string/cat_clothes</item>
+		<item>@string/cat_donation</item>
+		<item>@string/cat_contingency_expense</item>
+		<item>@string/cat_financial_milestone</item>
+	</string-array>
+	<string-array name="subcat_clothes">
+		<item>Sandy</item>
+		<item>Shoes</item>
+		<item>Tailor</item>
+		<item>Kids</item>
+		<item>Laundry</item>
+		<item>Sweety</item>
+		<item>Woolen</item>
+	</string-array>
+	<string-array name="subcat_contingency">
+		<item>Unforeseen</item>
+	</string-array>
+	<string-array name="subcat_donation_gift">
+		<item>Gift</item>
+		<item>Tip</item>
+	</string-array>
+	<string-array name="subcat_fancy_entertainment">
+		<item>Whimsical - Sandy</item>
+		<item>Whimsical - Sweety</item>
+		<item>Whimsical - Deba</item>
+		<item>Whimsical - Munni</item>
+		<item>Local outing</item>
+		<item>Vacation</item>
+		<item>Parties</item>
+		<item>Whimsical - Ma</item>
+		<item>Whimsical - Family Gift</item>
+	</string-array>
+	<string-array name="subcat_food">
+		<item>Snacks</item>
+		<item>Fruits</item>
+		<item>Junk food</item>
+		<item>Vegetables</item>
+		<item>Meat</item>
+		<item>Fish</item>
+		<item>Eggs</item>
+		<item>Wine</item>
+		<item>Sweets</item>
+	</string-array>
+	<string-array name="subcat_fuel_parking">
+		<item>Fuel for Ford</item>
+		<item>Parking</item>
+		<item>Fuel for Activa</item>
+		<item>Auto</item>
+		<item>Fuel for WagonR</item>
+		<item>Fine</item>
+	</string-array>
+	<string-array name="subcat_grocery_and_household">
+		<item>Grocery</item>
+		<item>Household</item>
+	</string-array>
+	<string-array name="subcat_house_maintenance">
+		<item>Tools and equipment</item>
+		<item>Repair and maintainence</item>
+		<item>House utility</item>
+		<item>House decoration</item>
+	</string-array>
+	<string-array name="subcat_medicines">
+		<item>Medicines</item>
+		<item>Consultation</item>
+		<item>Medical Tests</item>
+	</string-array>
+	<string-array name="subcat_monthly_bill">
+		<item>Broadband</item>
+		<item>Telephone</item>
+		<item>Electricity</item>
+		<item>Data Card Bill</item>
+		<item>Household expense to parents</item>
+		<item>Prepaid mobile recharge</item>
+		<item>Monthly Milk</item>
+		<item>TV subscription</item>
+		<item>Reliance Fresh</item>
+		<item>Deba pocket money</item>
+		<item>Hair cut</item>
+		<item>Newspaper</item>
+		<item>Gas</item>
+		<item>Indu salary</item>
+		<item>Malhari salary</item>
+		<item>Sangeeta salary</item>
+		<item>Marathi Tution</item>
+		<item>Bus fees</item>
+		<item>Monthly Medicines</item>
+		<item>Society maintenance</item>
+		<item>Property Tax</item>
+	</string-array>
+	<string-array name="subcat_school">
+		<item>Stationery</item>
+		<item>Books</item>
+		<item>School fees</item>
+		<item>Uniform</item>
+	</string-array>
+	<string-array name="subcat_vehicle_maintenance">
+		<item>Ford maintenance</item>
+		<item>PUC</item>
+		<item>Air</item>
+		<item>Insurance</item>
+		<item>Activa maintenance</item>
+		<item>WagonR maintainence</item>
+		<item>Cycle maintainence</item>
+	</string-array>
+	<string-array name="subcat_income">
+		<item>Salary</item>
+		<item>Pension</item>
+		<item>Medical Reimbursement</item>
+		<item>Broadband Reimbursement</item>
+		<item>Bank Interest</item>
+		<item>Fuel Reimbursement</item>
+		<item>Interest on Investment</item>
+		<item>RSU</item>
+		<item>Dividend</item>
+		<item>Superannuation Fund</item>
+		<item>Travel Reimbursement</item>
+		<item>Others</item>
+	</string-array>
+	<string-array name="subcat_investment">
+		<item>Equity</item>
+		<item>LIC Jeevan Mitra</item>
+		<item>LIC Jeevan Saral </item>
+		<item>LIC Pension Plan</item>
+		<item>Mediclaim</item>
+		<item>NPS</item>
+		<item>PPF</item>
+		<item>RD</item>
+		<item>Term plan</item>
+	</string-array>
+
+	<string name="title_activity_settings">Expense Tracker settings</string>
+	<string name="hello_world">Hello world!</string>
+	<string name="action_settings">Settings</string>
+	<string name="title_activity_manage_expense_category">Manage Expense Categories</string>
+	<string name="title_activity_manage_expense_subcategory">Manage Expense Sub-Categories</string>
+
+</resources>

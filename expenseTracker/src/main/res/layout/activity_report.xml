@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+
+    <ExpandableListView
+        android:id="@+id/reportListView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+	<RelativeLayout android:layout_width="fill_parent"
+	                android:layout_height="wrap_content">
+	 
+	    <TextView
+	        android:id="@+id/actReportTotAmtLabel"
+	        android:layout_width="90sp"
+	        android:layout_height="35sp"
+	        android:paddingRight="10sp"
+	        android:layout_alignParentRight="true"
+	        android:gravity="right|center_vertical"
+	        android:background="#666666" 
+	        android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+	    	    
+	    <TextView
+	        android:id="@+id/actReportTotLabel"
+	        android:layout_width="fill_parent"
+	        android:layout_height="35sp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_toLeftOf="@id/actReportTotAmtLabel"
+	        android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+	        android:background="#666666"
+	        android:text="@string/label_report_total"
+	        android:textSize="25sp"
+	        android:textStyle="bold"
+	        android:textColor="#FFFFFF" />
+	 
+	</RelativeLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android">
+  
+  <ImageView
+    android:id="@id/dslv_drag_handle"
+    android:background="@drawable/ic_action_view_as_list"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/item_height"
+    android:contentDescription="Add"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"/>
+  
+  <ImageView
+    android:id="@id/dslv_remove_handle"
+    android:background="@drawable/ic_action_discard"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/item_height"
+    android:contentDescription="Remove"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignBottom="@id/dslv_drag_handle"/>
+  
+  <TextView
+    android:id="@+id/dslv_item_text"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/item_height"
+    android:textSize="20sp"
+    android:gravity="center_vertical"
+    android:paddingLeft="8dp" 
+    android:layout_toRightOf="@id/dslv_drag_handle"
+    android:layout_toLeftOf="@id/dslv_remove_handle"
+    android:layout_alignBottom="@id/dslv_drag_handle"
+    android:layout_alignParentTop="true"/>
+
+</RelativeLayout>
