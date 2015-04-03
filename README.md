@@ -1,4 +1,4 @@
 # ExpenseTracker
-An Android application to capture daily expenses.
+###### An Android application to capture daily expenses.
 
-An expense tracker created more out of need than necessity. 
+An expense tracker created more out of necessity than need.
