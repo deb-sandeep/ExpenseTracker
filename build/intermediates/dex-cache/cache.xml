@@ -2,18 +2,31 @@
 <items version="2" >
 
     <item
-        jar="/home/sandeep/softwares/Android/Sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
-        <dex dex="/home/sandeep/projects/source/AndroidstudioProjects/ExpenseTracker/expenseTracker/build/intermediates/pre-dexed/debug/support-v4-18.0.0-c2d41702a286ce2bee3bbe93d3f2d925bb478b43.jar" />
+        is-multidex="true"
+        jar="/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_c6cf5e6476b5a7fecc55b5619d16de75da6c3434/classes.dex" />
     </item>
     <item
-        jar="/home/sandeep/projects/source/AndroidstudioProjects/ExpenseTracker/expenseTracker/build/intermediates/exploded-aar/ExpenseTracker/library/unspecified/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="90997d841c0f3bba9eb0ce9e4655d415c74a58a9">
-        <dex dex="/home/sandeep/projects/source/AndroidstudioProjects/ExpenseTracker/expenseTracker/build/intermediates/pre-dexed/debug/classes-e79a1d01cc866359208d38a322241a6deb7aa483.jar" />
+        is-multidex="true"
+        jar="/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="58e536f7a4d1f3f251321d3d83cb96d493f5f5cc">
+        <dex dex="/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c1d4459cf7284cbd6197602df863cc51ae0b2724/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sandeep/softwares/android-sdk/extras/android/m2repository/com/android/support/support-v4/19.0.0/support-v4-19.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="afee690af14bd2c32d400cdf78e746fd45c386fa">
+        <dex dex="/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/transforms/dex/debug/folders/1000/10/support-v4-19.0.0_002e798b4e3e3e1942161df20a02861807cee223/classes.dex" />
     </item>
 
 </items>
