@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/res/merged/debug/menu/menu_main_activity_action_bar.xml",
+        "source": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/src/main/res/menu/menu_main_activity_action_bar.xml"
+    },
+    {
+        "merged": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/res/merged/debug/menu/expense_item_context_menu.xml",
+        "source": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/src/main/res/menu/expense_item_context_menu.xml"
+    }
+]

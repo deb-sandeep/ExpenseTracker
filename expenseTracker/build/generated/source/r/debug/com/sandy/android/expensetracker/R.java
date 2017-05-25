@@ -9,24 +9,24 @@ package com.sandy.android.expensetracker;
 
 public final class R {
     public static final class array {
-        public static final int create_tables=0x7f040000;
-        public static final int drop_tables=0x7f040001;
-        public static final int expense_categories=0x7f040002;
-        public static final int paid_by_options=0x7f040003;
-        public static final int subcat_clothes=0x7f040004;
-        public static final int subcat_contingency=0x7f040005;
-        public static final int subcat_donation_gift=0x7f040006;
-        public static final int subcat_fancy_entertainment=0x7f040007;
-        public static final int subcat_food=0x7f040008;
-        public static final int subcat_fuel_parking=0x7f040009;
-        public static final int subcat_grocery_and_household=0x7f04000a;
-        public static final int subcat_house_maintenance=0x7f04000b;
-        public static final int subcat_income=0x7f04000c;
-        public static final int subcat_investment=0x7f04000d;
-        public static final int subcat_medicines=0x7f04000e;
-        public static final int subcat_monthly_bill=0x7f04000f;
-        public static final int subcat_school=0x7f040010;
-        public static final int subcat_vehicle_maintenance=0x7f040011;
+        public static final int create_tables=0x7f060000;
+        public static final int drop_tables=0x7f060001;
+        public static final int expense_categories=0x7f060002;
+        public static final int paid_by_options=0x7f060003;
+        public static final int subcat_clothes=0x7f060004;
+        public static final int subcat_contingency=0x7f060005;
+        public static final int subcat_donation_gift=0x7f060006;
+        public static final int subcat_fancy_entertainment=0x7f060007;
+        public static final int subcat_food=0x7f060008;
+        public static final int subcat_fuel_parking=0x7f060009;
+        public static final int subcat_grocery_and_household=0x7f06000a;
+        public static final int subcat_house_maintenance=0x7f06000b;
+        public static final int subcat_income=0x7f06000c;
+        public static final int subcat_investment=0x7f06000d;
+        public static final int subcat_medicines=0x7f06000e;
+        public static final int subcat_monthly_bill=0x7f06000f;
+        public static final int subcat_school=0x7f060010;
+        public static final int subcat_vehicle_maintenance=0x7f060011;
     }
     public static final class attr {
         /** <p>Must be an integer value, such as "<code>100</code>".
@@ -285,85 +285,85 @@ containing a value of this type.
         public static final int menu_main_activity_action_bar=0x7f080001;
     }
     public static final class string {
-        public static final int action_settings=0x7f060000;
-        public static final int cat_clothes=0x7f060001;
-        public static final int cat_contingency_expense=0x7f060002;
-        public static final int cat_donation=0x7f060003;
-        public static final int cat_fancy_entertainment=0x7f060004;
-        public static final int cat_financial_milestone=0x7f060005;
-        public static final int cat_food=0x7f060006;
-        public static final int cat_fuel_parking=0x7f060007;
-        public static final int cat_grocery_household=0x7f060008;
-        public static final int cat_house_maintenance=0x7f060009;
-        public static final int cat_income=0x7f06000a;
-        public static final int cat_investment=0x7f06000b;
-        public static final int cat_medicines=0x7f06000c;
-        public static final int cat_monthly_bill=0x7f06000d;
-        public static final int cat_school=0x7f06000e;
-        public static final int cat_vehicle_maintenance=0x7f06000f;
-        public static final int expense_item_tag=0x7f060010;
-        public static final int hello_world=0x7f060011;
-        public static final int label_add_btn=0x7f060012;
-        public static final int label_add_expense_btn=0x7f060013;
-        public static final int label_cancel_btn=0x7f060014;
-        public static final int label_ctx_mi_addamt=0x7f060015;
-        public static final int label_ctx_mi_clone=0x7f060016;
-        public static final int label_ctx_mi_clone_ex=0x7f060017;
-        public static final int label_ctx_mi_delete=0x7f060018;
-        public static final int label_exp_amt_text=0x7f060019;
-        public static final int label_exp_cat_spinner=0x7f06001a;
-        public static final int label_exp_choose_category=0x7f06001b;
-        public static final int label_exp_descr_text=0x7f06001c;
-        public static final int label_exp_paidby_spinner=0x7f06001d;
-        public static final int label_exp_subcat_spinner=0x7f06001e;
-        public static final int label_mi_db_export=0x7f06001f;
-        public static final int label_mi_delete_all=0x7f060020;
-        public static final int label_mi_export=0x7f060021;
-        public static final int label_mi_overflow=0x7f060022;
-        public static final int label_mi_report=0x7f060023;
-        public static final int label_mi_settings=0x7f060024;
-        public static final int label_ok_btn=0x7f060025;
-        public static final int label_report_total=0x7f060026;
-        public static final int msg_cant_remove_cat=0x7f060027;
-        public static final int msg_cant_remove_subcat=0x7f060028;
-        public static final int msg_null_string=0x7f060029;
-        public static final int msg_same_string=0x7f06002a;
-        public static final int query_add_category=0x7f06002b;
-        public static final int query_add_sub_category=0x7f06002c;
-        public static final int query_delete_all_subcats_for_cat=0x7f06002d;
-        public static final int query_delete_cat=0x7f06002e;
-        public static final int query_delete_subcat=0x7f06002f;
-        public static final int query_get_cat_seq_change_tupules=0x7f060030;
-        public static final int query_get_subcat_seq_change_tupules=0x7f060031;
-        public static final int query_is_cat_used=0x7f060032;
-        public static final int query_is_subcat_used=0x7f060033;
-        public static final int query_select_all_categories=0x7f060034;
-        public static final int query_select_all_expense_items=0x7f060035;
-        public static final int query_select_all_sub_categories=0x7f060036;
-        public static final int query_update_cat_name=0x7f060037;
-        public static final int query_update_cat_sequence_no=0x7f060038;
-        public static final int query_update_subcat_name=0x7f060039;
-        public static final int query_update_subcat_sequence_no=0x7f06003a;
-        public static final int title_activity_expense_entry=0x7f06003b;
-        public static final int title_activity_manage_expense_category=0x7f06003c;
-        public static final int title_activity_manage_expense_subcategory=0x7f06003d;
-        public static final int title_activity_report=0x7f06003e;
-        public static final int title_activity_settings=0x7f06003f;
-        public static final int title_main_activity=0x7f060040;
+        public static final int action_settings=0x7f070000;
+        public static final int cat_clothes=0x7f070001;
+        public static final int cat_contingency_expense=0x7f070002;
+        public static final int cat_donation=0x7f070003;
+        public static final int cat_fancy_entertainment=0x7f070004;
+        public static final int cat_financial_milestone=0x7f070005;
+        public static final int cat_food=0x7f070006;
+        public static final int cat_fuel_parking=0x7f070007;
+        public static final int cat_grocery_household=0x7f070008;
+        public static final int cat_house_maintenance=0x7f070009;
+        public static final int cat_income=0x7f07000a;
+        public static final int cat_investment=0x7f07000b;
+        public static final int cat_medicines=0x7f07000c;
+        public static final int cat_monthly_bill=0x7f07000d;
+        public static final int cat_school=0x7f07000e;
+        public static final int cat_vehicle_maintenance=0x7f07000f;
+        public static final int expense_item_tag=0x7f070010;
+        public static final int hello_world=0x7f070011;
+        public static final int label_add_btn=0x7f070012;
+        public static final int label_add_expense_btn=0x7f070013;
+        public static final int label_cancel_btn=0x7f070014;
+        public static final int label_ctx_mi_addamt=0x7f070015;
+        public static final int label_ctx_mi_clone=0x7f070016;
+        public static final int label_ctx_mi_clone_ex=0x7f070017;
+        public static final int label_ctx_mi_delete=0x7f070018;
+        public static final int label_exp_amt_text=0x7f070019;
+        public static final int label_exp_cat_spinner=0x7f07001a;
+        public static final int label_exp_choose_category=0x7f07001b;
+        public static final int label_exp_descr_text=0x7f07001c;
+        public static final int label_exp_paidby_spinner=0x7f07001d;
+        public static final int label_exp_subcat_spinner=0x7f07001e;
+        public static final int label_mi_db_export=0x7f07001f;
+        public static final int label_mi_delete_all=0x7f070020;
+        public static final int label_mi_export=0x7f070021;
+        public static final int label_mi_overflow=0x7f070022;
+        public static final int label_mi_report=0x7f070023;
+        public static final int label_mi_settings=0x7f070024;
+        public static final int label_ok_btn=0x7f070025;
+        public static final int label_report_total=0x7f070026;
+        public static final int msg_cant_remove_cat=0x7f070027;
+        public static final int msg_cant_remove_subcat=0x7f070028;
+        public static final int msg_null_string=0x7f070029;
+        public static final int msg_same_string=0x7f07002a;
+        public static final int query_add_category=0x7f07002b;
+        public static final int query_add_sub_category=0x7f07002c;
+        public static final int query_delete_all_subcats_for_cat=0x7f07002d;
+        public static final int query_delete_cat=0x7f07002e;
+        public static final int query_delete_subcat=0x7f07002f;
+        public static final int query_get_cat_seq_change_tupules=0x7f070030;
+        public static final int query_get_subcat_seq_change_tupules=0x7f070031;
+        public static final int query_is_cat_used=0x7f070032;
+        public static final int query_is_subcat_used=0x7f070033;
+        public static final int query_select_all_categories=0x7f070034;
+        public static final int query_select_all_expense_items=0x7f070035;
+        public static final int query_select_all_sub_categories=0x7f070036;
+        public static final int query_update_cat_name=0x7f070037;
+        public static final int query_update_cat_sequence_no=0x7f070038;
+        public static final int query_update_subcat_name=0x7f070039;
+        public static final int query_update_subcat_sequence_no=0x7f07003a;
+        public static final int title_activity_expense_entry=0x7f07003b;
+        public static final int title_activity_manage_expense_category=0x7f07003c;
+        public static final int title_activity_manage_expense_subcategory=0x7f07003d;
+        public static final int title_activity_report=0x7f07003e;
+        public static final int title_activity_settings=0x7f07003f;
+        public static final int title_main_activity=0x7f070040;
     }
     public static final class style {
-        /** 
+        /**  API 11 theme customizations can go here. 
+ API 14 theme customizations can go here. 
+
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
 		
- API 11 theme customizations can go here. 
- API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppBaseTheme=0x7f040000;
         /**  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070001;
+        public static final int AppTheme=0x7f040001;
     }
     public static final class styleable {
         /** Attributes that can be used with a DragSortListView.

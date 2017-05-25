@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/res/merged/debug/layout/activity_settings.xml",
+        "source": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/src/main/res/layout/activity_settings.xml"
+    },
+    {
+        "merged": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/res/merged/debug/layout/activity_report_listitem_group.xml",
+        "source": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/src/main/res/layout/activity_report_listitem_group.xml"
+    },
+    {
+        "merged": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/res/merged/debug/layout/expense_list_item.xml",
+        "source": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/src/main/res/layout/expense_list_item.xml"
+    },
+    {
+        "merged": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/res/merged/debug/layout/activity_report.xml",
+        "source": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/src/main/res/layout/activity_report.xml"
+    },
+    {
+        "merged": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/res/merged/debug/layout/popup_modify_string.xml",
+        "source": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/src/main/res/layout/popup_modify_string.xml"
+    },
+    {
+        "merged": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/res/merged/debug/layout/spinner_item.xml",
+        "source": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/src/main/res/layout/spinner_item.xml"
+    },
+    {
+        "merged": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/res/merged/debug/layout/dslv_item_layout.xml",
+        "source": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/src/main/res/layout/dslv_item_layout.xml"
+    },
+    {
+        "merged": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/res/merged/debug/layout/activity_report_listitem.xml",
+        "source": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/src/main/res/layout/activity_report_listitem.xml"
+    },
+    {
+        "merged": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/res/merged/debug/layout/catsubcat_listitem.xml",
+        "source": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/src/main/res/layout/catsubcat_listitem.xml"
+    },
+    {
+        "merged": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/res/merged/debug/layout/popup_add_amount.xml",
+        "source": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/src/main/res/layout/popup_add_amount.xml"
+    },
+    {
+        "merged": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/res/merged/debug/layout/activity_manage_expense_subcategory.xml",
+        "source": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/src/main/res/layout/activity_manage_expense_subcategory.xml"
+    },
+    {
+        "merged": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/res/merged/debug/layout/activity_manage_expense_category.xml",
+        "source": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/src/main/res/layout/activity_manage_expense_category.xml"
+    },
+    {
+        "merged": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/res/merged/debug/layout/activity_expense_entry.xml",
+        "source": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/src/main/res/layout/activity_expense_entry.xml"
+    }
+]

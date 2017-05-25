@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/res/merged/debug/drawable-xhdpi/coin_add_icon.png",
+        "source": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/src/main/res/drawable-xhdpi/coin_add_icon.png"
+    },
+    {
+        "merged": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_settings.png",
+        "source": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/src/main/res/drawable-xhdpi/ic_action_settings.png"
+    },
+    {
+        "merged": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_discard.png",
+        "source": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/src/main/res/drawable-xhdpi/ic_action_discard.png"
+    },
+    {
+        "merged": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_view_as_list_dark.png",
+        "source": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/src/main/res/drawable-xhdpi/ic_action_view_as_list_dark.png"
+    },
+    {
+        "merged": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_overflow.png",
+        "source": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/src/main/res/drawable-xhdpi/ic_action_overflow.png"
+    },
+    {
+        "merged": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_discard_negative.png",
+        "source": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/src/main/res/drawable-xhdpi/ic_action_discard_negative.png"
+    },
+    {
+        "merged": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_view_as_list.png",
+        "source": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/src/main/res/drawable-xhdpi/ic_action_view_as_list.png"
+    },
+    {
+        "merged": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_download.png",
+        "source": "/home/sandeep/projects/source/AndroidProjects/ExpenseTracker/expenseTracker/src/main/res/drawable-xhdpi/ic_action_download.png"
+    }
+]
