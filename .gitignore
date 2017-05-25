@@ -3,6 +3,8 @@
 build/generated/
 build/intermediates/
 build/android-profile/*
+library/build/generated/
+library/build/intermediates/
 
 # Crashlytics configuations
 com_crashlytics_export_strings.xml
